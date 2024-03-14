@@ -1,0 +1,49 @@
+<!--All pictures take from game "OMORI" and belong to OMOCAT-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>5.1 Lamp</title>
+</head>
+<body>
+    <img id="lamp" src="img/omori-lamp-bs.png">
+    <div>
+        <button id="on" onclick="switchTheLight()">TURN ON</button>
+        <button id="off" onclick="switchTheLight()", disabled = 'true'>TURN OFF</button>
+    </div>
+</body>
+
+<script>
+    var light = false;
+
+    function switchTheLight(){
+        var lamp = document.getElementById('lamp');
+        var body = document.querySelector('body');
+        var turnOn = document.getElementById('on');
+        var turnOff = document.getElementById('off');
+        
+        if(!light) {
+            body.style.backgroundColor = '#FFFFFF';
+            lamp.src = 'img/omori-lamp.png';
+            light = true;
+            turnOn.disabled = true;
+            turnOff.disabled = false;   
+        } else {
+            body.style.backgroundColor = '#000000';
+            lamp.src = 'img/omori-lamp-bs.png';
+            light = false;
+            turnOff.disabled = true;
+            turnOn.disabled = false;
+        }
+    }
+</script>
+</html>

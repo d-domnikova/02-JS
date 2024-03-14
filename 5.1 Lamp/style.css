@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.7s;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 0.7s;
+
+    padding-bottom: 75px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 0 15px;
+    padding: 7px;
+    border-radius: 8px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(65, 65, 65);
+}
