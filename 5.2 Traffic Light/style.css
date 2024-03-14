@@ -1,0 +1,29 @@
+body { 
+    display: flex; 
+    justify-content: center; 
+    margin: 0; 
+    background-color: #ecf1f1; 
+} 
+
+.trafficLight {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+
+    height: 380px;
+    width: 175px;
+    margin-top: 75px;
+    border: 2px solid #1e2025;
+    border-radius: 8px;
+    background-color: #3c3d41;
+}
+
+.light {
+    margin: 10px 0;
+    background-color: #1e2025;
+    height: 90px;
+    width: 90px;
+    border: 2px solid #1e2025;
+    border-radius: 50%;
+}
